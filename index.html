@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookMark</title>
+    <link rel="icon" href="./imgs/bookmark.png" />
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Righteous&display=swap" rel="stylesheet">
+</head>
+
+<body class="body">
+    <div id="home">
+        <section class="container w-75">
+            <div id="title" class="w-25 mx-auto">
+                <h1>BookMarker</h1>
+                <div id="layer"></div>
+            </div>
+            ....................................................................................................................................................................................................................................................................................................................................
+                <h2>
+                    <span id="span1"><i class="fa-solid fa-bookmark"></i>
+                        Bookmark Your </span>
+                    <span id="span2">
+                        Favorite Site
+                    <i class="fa-solid fa-bookmark"></i>
+                    </span>
+                </h2>
+                <label for="siteName" class="mb-2"><i class="fa-solid fa-book-bookmark pe-2"></i> Site Name:</label>
+                <input oninput="regexName()" type="text" id="siteName" class="form-control w-100 mb-3" placeholder="Bookmark Name">
+                <label for="siteUrl" class="mb-2"><i class="fa-solid fa-link pe-2"></i> Site URL:</label>
+                <input oninput="regexUrl()" type="url" id="siteUrl" class="form-control w-100 mb-3" placeholder="Website URL">
+                <div class="button">
+                    <button class="btn btn-danger px-5" onclick="submitSite()">Submit</button>
+                </div>
+                <br>
+            .....................................................................................................................................................................................................................................................................................................................................
+        </section>
+        <section class="bg-white w-75 mx-auto m-4">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Index</th>
+                        <th>WebSite Name</th>
+                        <th>Visit</th>
+                        <th>Delete</th>
+                    </tr>
+                </thead>
+                <tbody id="tableData">
+                    
+                </tbody>
+            </table>
+        </section>
+        
+    </div>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>
